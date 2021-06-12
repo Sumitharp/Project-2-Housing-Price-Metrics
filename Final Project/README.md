@@ -109,5 +109,5 @@ Additionally, our group created a custom built graphical user interface ("GUI") 
 
 y = [[-306,738 x (number of bedrooms)] + [77,541 x (number of bathrooms)] +  [987,872 x (house sqft)]  - [3,002 x (lot sqft)] + [41,363 x (livability index)] + 1,185,934] /5,000
 
-![Realtor](Images/house.png)
+![Realtor](Images/Realtor.png)
 ![Estimator](Images/Estimator.png)
