@@ -43,7 +43,7 @@ Root Mean Squared Error: 814,677.77
 ![Linear Regression Trend](Images/LR_t.png)
 
 #### Neural Network
-Additionally, the Seattle metropolitan area housing was trained using the neural network methodology of machine learning with 4 neurons, a batch size of 128, and 100 epochs.
+Additionally, the Seattle metropolitan area housing was trained using the neural network methodology of machine learning with 5 neurons, 3 layers, a batch size of 128, and 200 epochs.
 
 The neural network provided the following model error statistics:
 
@@ -105,9 +105,9 @@ Overall, the random forest methodology provided the most reliable model for pred
 ![Conclusion Summary](Images/Summary.png)
 
 ### Graphical User Interface
-Additionally, our group created a custom built graphical user interface ("GUI") to display listed sold/active houses and calculate the estimated the price of house based on the user provided metrics.  The GUI will provide a list of houses that were recently sold or are active based on the entered metrics including the zip code.  The GUI will also allow the user to calculate an estimated price for a house based on the entered metrics.  The code for the GUI utilized the linear regression equation that was derived using the machine learning.  Upon review of test samples of actual vs. predicted, the equation was modified to include a constant a variable that in this case divided the entire calculated house value by 3,000.  The final linear equation to derive housing prices is below:
+Additionally, our group created a custom built graphical user interface ("GUI") to display listed sold/active houses and calculate the estimated the price of house based on the user provided metrics.  The GUI will provide a list of houses that were recently sold or are active based on the entered metrics including the zip code.  The GUI will also allow the user to calculate an estimated price for a house based on the entered metrics.  The code for the GUI utilized the linear regression equation that was derived using the machine learning.  Upon review of test samples of actual vs. predicted, the equation was modified to include a constant a variable that in this case divided the entire calculated house value by 5,000.  The final linear equation to derive housing prices is below:
 
-y = [[-306,738 x (number of bedrooms)] + [77,541 x (number of bathrooms)] +  [987,872 x (house sqft)]  - [3,002 x (lot sqft)] + [41,363 x (livability index)] + 1,185,934] /3,000
+y = [[-306,738 x (number of bedrooms)] + [77,541 x (number of bathrooms)] +  [987,872 x (house sqft)]  - [3,002 x (lot sqft)] + [41,363 x (livability index)] + 1,185,934] /5,000
 
 ![Realtor](Images/Realtor.png)
 ![Estimator](Images/Estimator.png)
