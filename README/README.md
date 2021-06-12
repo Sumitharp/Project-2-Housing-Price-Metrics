@@ -18,8 +18,8 @@ Our group searched for individual housing prices in the greater Seattle metropol
 ### Do these metrics have a strong individual correlation to prices or is it strong as a group correlation?
 The Seattle metropolitan area housing prices during April 2021 and May 2021 were plotted against the selected metrics (# of bedrooms, # of bathrooms, house square feet, property lot square feet, and the Livability Index) to calculate correlation.  # of bedrooms (0.31), # of bathrooms (0.54), house square feet (.69), property lot square feet (.09), and Livability Index (0.20) had a mix of strong to weak positive linear correlations.  House square feet and # of bathrooms had the strongest correlation, conversely property square feet and Livability Index had the weakest linear correlation. 
 
-![Correlations](Images/Correlation_table.png)
-![Heatmap](Images/Correlation_heatmap.png)
+![Correlations](Images/correlation_table.png)
+![Heatmap](Images/correlation_heatmap.png)
 
 ### Can these metrics be used to train machine learning methodologies (linear regression, neural networks, decision tree, and random forest) to help predict house prices?
 #### Linear Regression
@@ -103,3 +103,11 @@ Root Mean Squared Error: 747,810.20
 Overall, the random forest methodology provided the most reliable model for predicting Seattle housing prices based on its accuracy score of 0.93, but more importantly, it provided the lowest mean absolute error (328,584), mean squared error (559,220,087,806), and root mean squared error (747,810).  All 4 machine learning techniques generated significant margins of error.  To better enhance the reliability and reduce errors, it is recommended to incorporate more data into the analysis.  Both additional amounts of data for the current selected metrics, but also incremental data types (i.e., the year when the house was built, recent renovations, pool, view, walkability score, driveway, size of garage, proximity of recent house foreclosures, etc. ).    
 
 ![Conclusion Summary](Images/Summary.png)
+
+### Graphical User Interface
+Additionally, our group created a custom built graphical user interface {"GUI") to display listed sold/active houses and calculate the estimated the price of house based on the user provided metrics.  The code for the GUI utilized the linear regression equation that was derived using the machine learning.  Upon review of test samples of actual vs. predicted, the equation was modified to include a constant a variable that in this case divided the entire calculated house value by 3,000.  The final linear equation to derive housing prices is below:
+
+y = [[-306,738 x (number of bedrooms)] + [77,541 x (number of bathrooms)] +  [987,872 x (house sqft)]  - [3,002 x (lot sqft)] + [41,363 x (livability index)] + 1,185,934] /3,000
+
+![Realtor](Images/Realtor.png)
+![Estimator](Images/Estimator.png)
