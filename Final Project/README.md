@@ -18,8 +18,8 @@ Our group searched for individual housing prices in the greater Seattle metropol
 ### Do these metrics have a strong individual correlation to prices or is it strong as a group correlation?
 The Seattle metropolitan area housing prices during April 2021 and May 2021 were plotted against the selected metrics (# of bedrooms, # of bathrooms, house square feet, property lot square feet, and the Livability Index) to calculate correlation.  # of bedrooms (0.31), # of bathrooms (0.54), house square feet (.69), property lot square feet (.09), and Livability Index (0.20) had a mix of strong to weak positive linear correlations.  House square feet and # of bathrooms had the strongest correlation, conversely property square feet and Livability Index had the weakest linear correlation. 
 
-![Correlations](Images/correlation_table.png)
-![Heatmap](Images/correlation_heatmap.png)
+![Correlations](Images/Correlation_table.png)
+![Heatmap](Images/Correlation_heatmap.png)
 
 ### Can these metrics be used to train machine learning methodologies (linear regression, neural networks, decision tree, and random forest) to help predict house prices?
 #### Linear Regression
